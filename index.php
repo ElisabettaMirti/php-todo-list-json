@@ -25,13 +25,13 @@
         <main> 
             <div class="list-container">
                 <ul>
-                    <li v-for="(task, index) in toDoList" :key="index">
+                    <li v-for="(task, index) in toDoList" :key="index" @click="isDone(task)">
                         <span :class="(task.done === true) ? 'done' : ''">
                             {{ task.content }}
                         </span>
                         <span>
-                            <i class="fa-solid fa-wand-magic-sparkles"></i>
-                            <i class="fa-solid fa-delete-left"></i>
+                            <i class="fa-solid fa-wand-magic-sparkles" @click="editTask(index)"></i>
+                            <i class="fa-solid fa-delete-left" @click="removeTask(index)"></i>
                         </span>
                         
                     </li>

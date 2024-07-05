@@ -30,6 +30,21 @@ const { createApp } = Vue
                 this.toDoList.push(newTask);
                 this.newTaskContent = "";
             },
+            isDone : function(task){  //funzione per mettere e togliere la classe done al task
+                if (task.done === false) {
+                    task.done = true;
+                } else {
+                    task.done = false;
+                }
+            },
+    
+            removeTask: function(taskIndex){ //funzione per eliminare il task (grazie Giordano di avermi esplicato nuovamente lo splice)
+                this.toDoList.splice(taskIndex, 1);
+            },
+
+            editTask: function(taskIndex){
+                this.toDoList[taskIndex].content = prompt('Modifica qua:');
+            }
         },
         created(){
             this.getToDoList();

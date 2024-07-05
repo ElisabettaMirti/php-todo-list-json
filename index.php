@@ -26,7 +26,7 @@
             <div class="list-container">
                 <ul>
                     <li v-for="(task, index) in toDoList" :key="index">
-                        <span>
+                        <span :class="(task.done === true) ? 'done' : ''">
                             {{ task.content }}
                         </span>
                         <span>

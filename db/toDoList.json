@@ -9,7 +9,7 @@
     },
     {
         "content": "Comprare le zanzariere",
-        "done": false
+        "done": true
     },
     {
         "content": "Preparare il brodo per cena",
@@ -17,11 +17,11 @@
     },
     {
         "content": "Comprare un quaderno nuovo",
-        "done": false
+        "done": true
     },
     {
         "content": "Prendere i biglietti per Zagarolo",
-        "done": false
+        "done": true
     },
     {
         "content": "Ritirare il pacco vinted",

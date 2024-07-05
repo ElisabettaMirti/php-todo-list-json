@@ -4,7 +4,8 @@ const { createApp } = Vue
         data() {
         return {
             toDoList: [],
-            apiURL: './api/get_all_tasks.php'
+            apiURL: './api/get_all_tasks.php',
+            newTaskContent: ''
             }
         },
         methods: {
@@ -20,7 +21,15 @@ const { createApp } = Vue
                 .finally(function () {
                 // always executed
                 });  
-            }
+            },
+            addTask: function(){
+                const newTask = {
+                    content: this.newTaskContent,
+                    done: false
+                }
+                this.toDoList.push(newTask);
+                this.newTaskContent = "";
+            },
         },
         created(){
             this.getToDoList();

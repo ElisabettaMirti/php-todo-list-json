@@ -36,8 +36,13 @@
                         
                     </li>
                 </ul>
-                
-                
+                <div class="input-container">
+                    <label for="new-task">Aggiungi un'attività:</label>
+                    <input type="text" id="new-task" v-model="newTaskContent" @keyup.enter="addTask">
+                    <button @click="addTask">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>                
             </div>
         </main>
     </div>

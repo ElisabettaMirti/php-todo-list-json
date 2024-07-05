@@ -1,0 +1,38 @@
+{"tasks" : [    
+    {
+        "content": "Fare la spesa",
+        "done": false
+    },
+    {
+        "content": "Portare a spasso il gatto",
+        "done": false
+    },
+    {
+        "content": "Comprare le zanzariere",
+        "done": false
+    },
+    {
+        "content": "Preparare il brodo per cena",
+        "done": false
+    },
+    {
+        "content": "Comprare un quaderno nuovo",
+        "done": false
+    },
+    {
+        "content": "Prendere i biglietti per Zagarolo",
+        "done": false
+    },
+    {
+        "content": "Ritirare il pacco vinted",
+        "done": false
+    },
+    {
+        "content": "Sistemare le foto da stampare",
+        "done": false
+    },
+    {
+        "content": "Organizzare la vacanza in Grecia",
+        "done": false
+    }    
+]}
